@@ -3,6 +3,12 @@ let menuBtn = document.querySelector(".bars");
 let navbar = document.querySelector(".links");
 menuBtn.addEventListener("click", () => {
     navbar.classList.toggle("show-menu");
+    navbar.onclick = () => {
+        navbar.classList.remove("show-menu");
+    };
+    document.onscroll = () => {
+        navbar.classList.remove("show-menu");
+    };
 });
 
 // show sticky header & scroll to top button
