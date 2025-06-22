@@ -35,7 +35,7 @@ let sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", () => {
     let currentSection = "";
-    let scrollPos = window.scrollY + 100; // زيادة بسيطة لتحسين الدقة
+    let scrollPos = window.scrollY + 100;
 
     sections.forEach(section => {
         if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
